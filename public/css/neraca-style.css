@@ -1,0 +1,79 @@
+/* --- NERACA DESIGN SYSTEM --- */
+
+:root {
+    /* Definisi Warna Modular (Ubah di sini, berubah semua) */
+    --neraca-dark: #121212;       /* Background Utama */
+    --neraca-card: #212529;       /* Card/Navbar */
+    --neraca-orange: #FF8C00;     /* Warna Utama (Aksen) */
+    --neraca-orange-hover: #e57f00;
+    --neraca-text-light: #F8F9FA;
+    --neraca-text-dark: #000000;
+}
+
+/* 1. Background Helpers */
+.bg-neraca-dark {
+    background-color: var(--neraca-dark) !important;
+    color: var(--neraca-text-light);
+}
+
+.bg-neraca-card {
+    background-color: var(--neraca-card) !important;
+    color: var(--neraca-text-light);
+}
+
+/* 2. Text Helpers */
+.text-neraca-orange {
+    color: var(--neraca-orange) !important;
+}
+
+/* 3. Button Modular: Outline Warning (Custom Neraca) */
+.btn-outline-neraca {
+    color: var(--neraca-orange);
+    border-color: var(--neraca-orange);
+    border-width: 2px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-neraca:hover {
+    background-color: var(--neraca-orange);
+    color: var(--neraca-text-dark);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5); /* Efek Glow */
+}
+
+/* 4. Button Modular: Solid Orange */
+.btn-neraca {
+    background-color: var(--neraca-orange);
+    border-color: var(--neraca-orange);
+    color: var(--neraca-text-dark);
+    font-weight: bold;
+}
+
+.btn-neraca:hover {
+    background-color: var(--neraca-orange-hover);
+    border-color: var(--neraca-orange-hover);
+}
+
+/* 5. Navbar Custom Override */
+.navbar-neraca {
+    background-color: var(--neraca-card);
+    border-bottom: 1px solid #333;
+}
+
+.navbar-neraca .navbar-brand, 
+.navbar-neraca .nav-link {
+    color: var(--neraca-text-light) !important;
+}
+
+.navbar-neraca .nav-link:hover {
+    color: var(--neraca-orange) !important;
+}
+
+/* 6. Footer Custom */
+.footer-neraca {
+    background-color: var(--neraca-card);
+    border-top: 1px solid #333;
+    color: #aaa;
+    padding: 2rem 0;
+    margin-top: auto; /* Agar footer selalu di bawah */
+}
